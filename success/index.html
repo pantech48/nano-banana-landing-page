@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата прошла успешно | Nano Banana Pro</title>
+    <meta name="description" content="Спасибо за покупку! Ваши кредиты уже зачислены на баланс.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --yellow: #FFE135;
+            --yellow-dark: #F5D400;
+            --dark: #0D0D0D;
+            --dark-card: #1A1A1A;
+            --dark-border: #2A2A2A;
+            --gray: #888;
+            --white: #FFFFFF;
+            --green: #4CAF50;
+            --gradient-yellow: linear-gradient(135deg, #FFE135 0%, #FFA500 100%);
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--dark);
+            color: var(--white);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+        }
+        .success-container {
+            max-width: 500px;
+            text-align: center;
+        }
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            background: var(--green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 32px;
+            animation: scaleIn 0.5s ease-out;
+        }
+        @keyframes scaleIn {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .success-icon svg {
+            width: 50px;
+            height: 50px;
+            color: white;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .success-message {
+            color: var(--gray);
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .info-card {
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+        .info-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--yellow);
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .step:last-child {
+            margin-bottom: 0;
+        }
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: var(--gradient-yellow);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--dark);
+            flex-shrink: 0;
+        }
+        .step-content h4 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .step-content p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--gradient-yellow);
+            color: var(--dark);
+            font-size: 18px;
+            font-weight: 700;
+            padding: 18px 40px;
+            border-radius: 100px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(255, 225, 53, 0.3);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(255, 225, 53, 0.4);
+        }
+        .cta-button svg {
+            width: 24px;
+            height: 24px;
+        }
+        .support-text {
+            margin-top: 32px;
+            font-size: 14px;
+            color: var(--gray);
+        }
+        .support-text a {
+            color: var(--yellow);
+            text-decoration: none;
+        }
+        .support-text a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            color: var(--gray);
+            font-size: 13px;
+        }
+        .footer a {
+            color: var(--gray);
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: var(--yellow);
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="success-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+            </svg>
+        </div>
+
+        <h1>Оплата прошла успешно!</h1>
+        <p class="success-message">Кредиты уже зачислены на ваш баланс</p>
+
+        <div class="info-card">
+            <h3>Что дальше?</h3>
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Откройте бота</h4>
+                    <p>Перейдите в Telegram-бот @banana_nano_pro_bot</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Проверьте баланс</h4>
+                    <p>Кредиты уже на вашем счету в разделе «Профиль»</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Создавайте!</h4>
+                    <p>Отправьте описание или фото — и получите результат</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://t.me/banana_nano_pro_bot" class="cta-button" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/>
+            </svg>
+            Открыть Nano Banana Bot
+        </a>
+
+        <p class="support-text">
+            Есть вопросы? Напишите нам: <a href="mailto:bananananoprobot@gmail.com">bananananoprobot@gmail.com</a>
+        </p>
+
+        <div class="footer">
+            <p>ИП Табунов | ИНН 773379585100</p>
+            <p style="margin-top: 8px;">
+                <a href="/">Главная</a> ·
+                <a href="/terms">Оферта</a> ·
+                <a href="/privacy">Политика конфиденциальности</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
