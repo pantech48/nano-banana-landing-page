@@ -196,8 +196,27 @@
 
         .pain-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .pain-grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .pain-grid-2 {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 600px;
+            margin-top: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .pain-grid-3,
+            .pain-grid-2 {
+                grid-template-columns: 1fr;
+                max-width: 100%;
+            }
         }
 
         .pain-card {
@@ -1428,7 +1447,7 @@
         <div class="container">
             <h2 style="text-align: center; margin-bottom: 48px;">Знакомые ситуации ?</h2>
 
-            <div class="pain-grid" style="grid-template-columns: repeat(3, 1fr); max-width: 900px; margin: 0 auto;">
+            <div class="pain-grid pain-grid-3">
                 <div class="pain-card">
                     <div class="pain-icon">😤</div>
                     <h3>Сложные программы для редактирования</h3>
@@ -1445,7 +1464,7 @@
                 </div>
             </div>
 
-            <div class="pain-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 600px; margin: 24px auto 0;">
+            <div class="pain-grid pain-grid-2">
                 <div class="pain-card">
                     <div class="pain-icon">📱</div>
                     <h3>Нужен VPN для многих сервисов</h3>
