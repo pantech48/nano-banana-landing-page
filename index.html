@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NanoBanana Bot - AI генерация изображений в Telegram</title>
     <link rel="icon" type="image/png" href="images/icon.png">
-    <meta name="description" content="Создавай крутые изображения с помощью AI прямо в Telegram. Быстро, качественно, удобно. 10 бесплатных кредитов при старте.">
+    <meta name="description"
+        content="Создавай крутые изображения с помощью AI прямо в Telegram. Быстро, качественно, удобно. 2 бесплатные генерации при старте.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -71,8 +73,17 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.1); opacity: 0.8; }
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
         }
 
         .hero-badge {
@@ -213,6 +224,7 @@
         }
 
         @media (max-width: 768px) {
+
             .pain-grid-3,
             .pain-grid-2 {
                 grid-template-columns: 1fr;
@@ -539,7 +551,7 @@
             align-items: center;
             gap: 12px;
             padding-bottom: 16px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             margin-bottom: 20px;
         }
 
@@ -630,6 +642,7 @@
         }
 
         @media (max-width: 600px) {
+
             .all-in-one-steps-left,
             .all-in-one-steps-right {
                 flex-direction: column;
@@ -676,7 +689,7 @@
             direction: rtl;
         }
 
-        .feature-block:nth-child(even) > * {
+        .feature-block:nth-child(even)>* {
             direction: ltr;
         }
 
@@ -774,7 +787,7 @@
             align-items: center;
             gap: 12px;
             padding-bottom: 16px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             margin-bottom: 16px;
         }
 
@@ -1167,11 +1180,30 @@
             justify-content: center;
         }
 
-        .format-preview.ratio-1-1 { width: 50px; height: 50px; }
-        .format-preview.ratio-9-16 { width: 34px; height: 60px; }
-        .format-preview.ratio-16-9 { width: 60px; height: 34px; }
-        .format-preview.ratio-4-3 { width: 60px; height: 45px; }
-        .format-preview.ratio-21-9 { width: 60px; height: 26px; }
+        .format-preview.ratio-1-1 {
+            width: 50px;
+            height: 50px;
+        }
+
+        .format-preview.ratio-9-16 {
+            width: 34px;
+            height: 60px;
+        }
+
+        .format-preview.ratio-16-9 {
+            width: 60px;
+            height: 34px;
+        }
+
+        .format-preview.ratio-4-3 {
+            width: 60px;
+            height: 45px;
+        }
+
+        .format-preview.ratio-21-9 {
+            width: 60px;
+            height: 26px;
+        }
 
         .format-name {
             font-size: 14px;
@@ -1382,6 +1414,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -1393,12 +1426,24 @@
             animation: fadeInUp 0.8s ease forwards;
         }
 
-        .delay-1 { animation-delay: 0.1s; }
-        .delay-2 { animation-delay: 0.2s; }
-        .delay-3 { animation-delay: 0.3s; }
-        .delay-4 { animation-delay: 0.4s; }
+        .delay-1 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-4 {
+            animation-delay: 0.4s;
+        }
     </style>
 </head>
+
 <body>
     <!-- HERO SECTION -->
     <section class="hero">
@@ -1416,7 +1461,8 @@
 
         <a href="https://t.me/banana_nano_pro_bot" class="cta-button" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/>
+                <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z" />
             </svg>
             Начать в Telegram
         </a>
@@ -1424,19 +1470,22 @@
         <div class="hero-features">
             <div class="hero-feature">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                 </svg>
                 Результат за 10-20 сек
             </div>
             <div class="hero-feature">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                 </svg>
                 До 4K разрешения
             </div>
             <div class="hero-feature">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                 </svg>
                 11 форматов
             </div>
@@ -1488,7 +1537,8 @@
             <div class="showcase-block">
                 <div class="showcase-header">
                     <h3>Экономь от 15 000 рублей на фотосессиях</h3>
-                    <p>Примерьте на себя любой стиль — от делового до фэнтези. Бот создаст образы, отражающие вашу индивидуальность и настроение.</p>
+                    <p>Примерьте на себя любой стиль — от делового до фэнтези. Бот создаст образы, отражающие вашу
+                        индивидуальность и настроение.</p>
                 </div>
                 <div class="showcase-grid">
                     <div class="showcase-item">
@@ -1506,7 +1556,8 @@
             <div class="showcase-block">
                 <div class="showcase-header">
                     <h3>Любые образы на ваш вкус</h3>
-                    <p>Перенесите себя куда угодно — от студийных фото до красочных мест. Наш бот создаст реалистичный фон, будто вы там действительно были.</p>
+                    <p>Перенесите себя куда угодно — от студийных фото до красочных мест. Наш бот создаст реалистичный
+                        фон, будто вы там действительно были.</p>
                 </div>
                 <div class="showcase-grid">
                     <div class="showcase-item">
@@ -1524,7 +1575,8 @@
             <div class="showcase-block">
                 <div class="showcase-header">
                     <h3>Воплощай все свои идеи</h3>
-                    <p>Переносись в прошлое, представляй себя в роли любимых персонажей мультфильмов, делай фото со знаменитостями</p>
+                    <p>Переносись в прошлое, представляй себя в роли любимых персонажей мультфильмов, делай фото со
+                        знаменитостями</p>
                 </div>
                 <div class="showcase-grid">
                     <div class="showcase-item">
@@ -1684,20 +1736,30 @@
 
                     <ul class="pricing-features">
                         <li>
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
                             Идеально для знакомства
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
                             Все функции бота
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
                             Без срока действия
                         </li>
                     </ul>
 
-                    <a href="https://t.me/banana_nano_pro_bot" class="pricing-btn pricing-btn-secondary" target="_blank">Выбрать</a>
+                    <a href="https://t.me/banana_nano_pro_bot" class="pricing-btn pricing-btn-secondary"
+                        target="_blank">Выбрать</a>
                 </div>
 
                 <!-- Popular -->
@@ -1716,20 +1778,30 @@
 
                     <ul class="pricing-features">
                         <li>
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
                             Лучшая цена за генерацию
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
                             Хватит на месяц
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
                             Приоритетная поддержка
                         </li>
                     </ul>
 
-                    <a href="https://t.me/banana_nano_pro_bot" class="pricing-btn pricing-btn-primary" target="_blank">Выбрать</a>
+                    <a href="https://t.me/banana_nano_pro_bot" class="pricing-btn pricing-btn-primary"
+                        target="_blank">Выбрать</a>
                 </div>
 
                 <!-- Pro -->
@@ -1747,20 +1819,30 @@
 
                     <ul class="pricing-features">
                         <li>
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
                             Для активных пользователей
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
                             Максимальная экономия
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
                             VIP поддержка
                         </li>
                     </ul>
 
-                    <a href="https://t.me/banana_nano_pro_bot" class="pricing-btn pricing-btn-secondary" target="_blank">Выбрать</a>
+                    <a href="https://t.me/banana_nano_pro_bot" class="pricing-btn pricing-btn-secondary"
+                        target="_blank">Выбрать</a>
                 </div>
             </div>
         </div>
@@ -1769,30 +1851,36 @@
     <!-- CTA SECTION -->
     <section class="cta-section">
         <div class="container">
-            <h2 style="font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 700; margin-bottom: 12px;">Хочешь сэкономить время и деньги?</h2>
-            <p style="color: var(--gray); font-size: 18px; margin-bottom: 8px;">Будь в тренде вместе с нами и переходи в бота</p>
+            <h2 style="font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 700; margin-bottom: 12px;">Хочешь сэкономить
+                время и деньги?</h2>
+            <p style="color: var(--gray); font-size: 18px; margin-bottom: 8px;">Будь в тренде вместе с нами и переходи в
+                бота</p>
             <p style="color: var(--yellow); font-size: 16px; margin-bottom: 40px;">Попробуй, всего от 399₽</p>
 
             <div class="cta-box">
                 <div class="cta-emoji">🍌</div>
-                <p style="color: var(--white); font-size: 20px; font-weight: 600; margin-bottom: 24px;">10 бесплатных кредитов ждут тебя</p>
+                <p style="color: var(--white); font-size: 20px; font-weight: 600; margin-bottom: 24px;">2 бесплатные
+                    генерации ждут тебя</p>
 
                 <div class="cta-benefits">
                     <div class="cta-benefit">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                         </svg>
                         Без регистрации
                     </div>
                     <div class="cta-benefit">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                         </svg>
                         Без VPN
                     </div>
                     <div class="cta-benefit">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                         </svg>
                         На русском языке
                     </div>
@@ -1800,7 +1888,8 @@
 
                 <a href="https://t.me/banana_nano_pro_bot" class="cta-button" target="_blank">
                     <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/>
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z" />
                     </svg>
                     Открыть NanoBanana Bot
                 </a>
@@ -1819,8 +1908,10 @@
                 <p style="color: var(--gray); font-size: 13px; margin-bottom: 8px;">ИП Табунов | ИНН 773379585100</p>
                 <p style="font-size: 13px;">
                     <a href="/terms" style="color: var(--gray); text-decoration: none; margin: 0 8px;">Оферта</a> ·
-                    <a href="/privacy" style="color: var(--gray); text-decoration: none; margin: 0 8px;">Политика конфиденциальности</a> ·
-                    <a href="/consent" style="color: var(--gray); text-decoration: none; margin: 0 8px;">Согласие на обработку данных</a>
+                    <a href="/privacy" style="color: var(--gray); text-decoration: none; margin: 0 8px;">Политика
+                        конфиденциальности</a> ·
+                    <a href="/consent" style="color: var(--gray); text-decoration: none; margin: 0 8px;">Согласие на
+                        обработку данных</a>
                 </p>
             </div>
         </div>
@@ -1860,4 +1951,5 @@
         });
     </script>
 </body>
+
 </html>
